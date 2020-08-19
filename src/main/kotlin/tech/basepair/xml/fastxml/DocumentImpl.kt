@@ -42,6 +42,11 @@ internal fun <T> checkRequired(value: T?, message: String): T {
   return value
 }
 
+/**
+ * An Implementation of [Document] that utilises the VTD-XML library
+ *
+ * @author jaiew
+ */
 internal class DocumentImpl : Document {
 
   private val nav: VTDNav

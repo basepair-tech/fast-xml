@@ -20,6 +20,8 @@ package tech.basepair.xml.fastxml.api
 
 /**
  * Represents an XML Document
+ *
+ * @author jaiew
  */
 interface Document: XPathQueryable {
 

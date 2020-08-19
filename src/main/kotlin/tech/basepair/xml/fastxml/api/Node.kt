@@ -27,7 +27,10 @@ import java.math.BigInteger
  * a [Node]
  * This allows extracting the data of the Node such as tag name, text or attributes as well
  * as querying for additional nodes using xpath,
+ *
  * @see XPathQueryable
+ *
+ * @author jaiew
  */
 interface Node : XPathQueryable {
 

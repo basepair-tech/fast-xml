@@ -22,6 +22,11 @@ import tech.basepair.xml.fastxml.api.Node
 import tech.basepair.xml.fastxml.api.NodeList
 import java.util.stream.Stream
 
+/**
+ * An Implementation of [NodeList]
+ *
+ * @author jaiew
+ */
 internal class NodeListImpl(_nodes: List<Node>) : NodeList {
   private val nodes: List<Node> = _nodes;
 

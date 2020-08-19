@@ -6,7 +6,7 @@ project.version = "${version}"
 
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.3.61"
+    id("org.jetbrains.kotlin.jvm") version "1.4.0"
     id("org.jetbrains.dokka") version "0.10.1"
     id("com.jfrog.bintray") version "1.8.5"
     id("net.researchgate.release") version "2.8.1"
@@ -30,8 +30,6 @@ dependencies {
     implementation("com.ximpleware", "vtd-xml", "2.13.4")
 
     implementation("org.apache.commons", "commons-text" , "1.8")
-
-    implementation("org.jetbrains.kotlinx", "kotlinx-collections-immutable-jvm", "0.3.2")
 
     implementation("io.github.microutils", "kotlin-logging", "1.7.8")
 
@@ -60,6 +58,7 @@ tasks.withType<Jar> {
 tasks.dokka {
     outputFormat = "html"
     outputDirectory = "$buildDir/javadoc"
+    sourceSets
 }
 
 val dokkaJar by tasks.creating(Jar::class) {

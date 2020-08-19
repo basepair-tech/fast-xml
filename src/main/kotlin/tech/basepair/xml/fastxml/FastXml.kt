@@ -35,6 +35,8 @@ private val LOG = KotlinLogging.logger {}
  * All xpath queries and parsing is performed by the underlying VTD-XML parser.
  *
  * For more details on the VTD-XML parser see here: https://vtd-xml.sourceforge.io/
+ *
+ * @author jaiew
  */
 sealed class FastXml {
 

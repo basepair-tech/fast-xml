@@ -24,6 +24,11 @@ import tech.basepair.xml.fastxml.exception.InvalidDataException
 import java.math.BigDecimal
 import java.math.BigInteger
 
+/**
+ * An Implementation of [Node]
+ *
+ * @author jaiew
+ */
 internal class NodeImpl(_index: Int, _doc: DocumentImpl) : Node {
   private val index: Int = _index
   private val doc: DocumentImpl = _doc

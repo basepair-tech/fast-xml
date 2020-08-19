@@ -22,6 +22,12 @@ import java.util.stream.Stream
 
 /**
  * Represents a list of nodes that can be iterated and streamed
+ *
+ *     doc.selectNodes("/b").stream()
+ *       .filter(n -> n.hasAttr("num"))
+ *       .collect(NodeListCollector.collect())
+ *
+ * @author jaiew
  */
 interface NodeList : Iterable<Node> {
 

@@ -25,6 +25,8 @@ import java.math.BigInteger
  * Represents the objects that an XPath can be executed against
  * @see Document
  * @see Node
+ *
+ * @author jaiew
  */
 interface XPathQueryable {
 

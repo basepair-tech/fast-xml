@@ -26,7 +26,16 @@ import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
 
-public class NodesCollector {
+/**
+ * A Collector for creating a NodeList after Streaming over an existing NodeList.
+ *
+ *    doc.selectNodes("/b").stream()
+ *      .filter(n -> n.hasAttr("num"))
+ *      .collect(NodeListCollector.collect())
+ *
+ * @author jaiew
+ */
+public class NodeListCollector {
 
   public static Collector<Node, ?, NodeList> collect() {
     return Collector.of((Supplier<List<Node>>) ArrayList::new, List::add, (left, right) -> {
