@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders xmlns:ns="http://basepair.tech">
+  <order num="1" processed="true">
+    <name>Order 1</name>
+    <price currency="AUD">49.00</price>
+    <qty>15</qty>
+    <available>true</available>
+    <items>
+      <item cost="40.00">1</item>
+      <item cost="2.00">2</item>
+      <item cost="2.00">3</item>
+      <item cost="2.00">4</item>
+      <item cost="2.00">5</item>
+      <item cost="1.00">6</item>
+    </items>
+  </order>
+  <order num="2" processed="true">
+    <name>Order 2</name>
+    <price currency="AUD">49.00</price>
+    <qty>15</qty>
+    <available>false</available>
+    <items>
+      <item cost="40.00">1</item>
+      <item cost="2.00">2</item>
+      <item cost="2.00">3</item>
+      <item cost="2.00">4</item>
+      <item cost="2.00">5</item>
+      <item cost="1.00">6</item>
+    </items>
+  </order>
+  <ns:order num="3" processed="false">
+    <ns:name>Order 3</ns:name>
+    <ns:price currency="AUD">49.00</ns:price>
+    <ns:qty>15</ns:qty>
+    <ns:available>false</ns:available>
+    <ns:items>
+      <ns:item cost="40.00">1</ns:item>
+      <ns:item cost="2.00">2</ns:item>
+      <ns:item cost="2.00">3</ns:item>
+      <ns:item cost="2.00">4</ns:item>
+      <ns:item cost="2.00">5</ns:item>
+      <ns:item cost="1.00">6</ns:item>
+    </ns:items>
+  </ns:order>
+  <ns:order num="4" processed="true">
+    <ns:name>Order 4</ns:name>
+    <ns:price currency="AUD">49.00</ns:price>
+    <ns:qty>15</ns:qty>
+    <ns:available>true</ns:available>
+    <ns:items>
+      <ns:item cost="40.00">1</ns:item>
+      <ns:item cost="2.00">2</ns:item>
+      <ns:item cost="2.00">3</ns:item>
+      <ns:item cost="2.00">4</ns:item>
+      <ns:item cost="2.00">5</ns:item>
+      <ns:item cost="1.00"><![CDATA[6]]></ns:item>
+    </ns:items>
+  </ns:order>
+</orders>
