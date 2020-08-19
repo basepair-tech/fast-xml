@@ -18,6 +18,14 @@ dependencies {
 }
 ```
 
+### Using with a Java Project
+
+You will need to add the kotlin runtime as a dependency to your project:
+
+```
+implementation 'org.jetbrains.kotlin:kotline-stdlib:1.4.0'
+```
+
 ## Parsing an XML File
 
     val xml = """<document>
