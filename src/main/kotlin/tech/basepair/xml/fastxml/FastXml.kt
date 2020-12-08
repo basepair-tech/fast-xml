@@ -21,7 +21,6 @@ package tech.basepair.xml.fastxml
 import com.ximpleware.ParseException
 import com.ximpleware.VTDGen
 import mu.KotlinLogging
-import org.jetbrains.annotations.Nullable
 import tech.basepair.xml.fastxml.api.Document
 import java.io.File
 import java.io.InputStream

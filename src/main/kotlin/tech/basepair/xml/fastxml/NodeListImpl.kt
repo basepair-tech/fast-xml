@@ -34,9 +34,9 @@ internal class NodeListImpl(_nodes: List<Node>) : NodeList {
 
   override fun isEmpty() = nodes.isEmpty()
 
-  override  fun get(index: Int) = nodes[index]
+  override fun get(index: Int) = nodes[index]
 
-  override  fun stream(): Stream<Node> = nodes.stream()
+  override fun stream(): Stream<Node> = nodes.stream()
 
   override fun iterator(): Iterator<Node> = nodes.iterator()
 
